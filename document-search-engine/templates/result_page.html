@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<body>
+<div>
+    {% for result in results %}
+    <h2>{{ result.name }}</h2>
+    <a href={{ result.url }}>Online Wikipedia entry</a><br>
+    <a href="local/{{ result.file_name }}">Offline local copy</a><br>
+    {% endfor %}
+</div>
+</body>
+</html>
+
